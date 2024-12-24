@@ -4,4 +4,4 @@ Este projeto é um clone da página inicial do Spotify, no qual busquei replicar
 
 Durante o desenvolvimento, explorei bastante o uso de ferramentas de manipulação de imagens e o posicionamento das caixas. Para organizar as divs, utilizei o **Flexbox**, e para garantir a responsividade, apliquei técnicas de **seletores avançados**.
 
-Tenho uma grande afinidade com CSS, e estou bastante satisfeito com o resultado final deste projeto.
+Tenho uma grande afinidade com CSS, e estou bastante satisfeito com o resultado final deste projeto. 🚀

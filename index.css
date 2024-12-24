@@ -1,0 +1,418 @@
+/* CONFIGURAÇÕES INICIAIS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+/* BODY */
+
+body {
+  background-color: #000;
+}
+
+/* HEADER  */
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0.5rem;
+  justify-content: center;
+  background-color: #000;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#spotify {
+  display: flex;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.searching_container {
+  min-width: 500px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#house {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border: 1px solid transparent;
+  background-color: #434242;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#house:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.searching_container h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #c0b9b9;
+}
+
+.searching_glass {
+  display: flex;
+  max-width: 420px;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: #302f2f;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.searching_glass:hover {
+  outline: 1px solid #fff;
+}
+
+.ask_listen {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ask_listen input {
+  min-width: 320px;
+  color: #fff;
+  background: none;
+  border: transparent;
+  outline: transparent;
+  transition: 0.3s;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+#list {
+  color: #fff;
+  font-size: 1.2rem;
+  border-left: 2px solid #888383;
+  padding-left: 0.5rem;
+}
+
+.buttons_header {
+  display: flex;
+  gap: 1rem;
+}
+
+.button_signIn {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.button_signIn h3 {
+  color: #c0b9b9;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.button_signIn h3:hover {
+  color: #fff;
+}
+
+.button_signUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  padding: 1rem;
+  border: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button_signUp:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.button_signUp h3 {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.container_separation {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 70px;
+  display: flex;
+  padding: 0.2rem;
+  gap: 0.3rem;
+  overflow: auto;
+}
+
+/* ASIDE  */
+
+aside {
+  min-width: 20vw;
+}
+
+#library_icon {
+  color: #aba5a5;
+}
+
+.aside_container {
+  max-width: 320px;
+  min-height: 75vh;
+  background-color: #191818;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+
+.your_library {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.your_library h3 {
+  color: #aba5a5;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: -100px;
+}
+
+#plus_icon {
+  color: #aba5a5;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+  padding: 0.3rem;
+}
+
+#plus_icon:hover {
+  background-color: #7d7b7b;
+  color: #fff;
+}
+
+.your_playlist,
+.new_podcast {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+  gap: 0.2rem;
+  background-color: #434141;
+}
+
+.your_playlist h3,
+.new_podcast h3 {
+  color: #f4eeee;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.your_playlist p,
+.new_podcast p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #d1cece;
+}
+
+.button_playlist,
+.button_newpodcast {
+  display: inline-block;
+  width: 120px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  margin-top: 0.5rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button_playlist:hover,
+.button_newpodcast:hover,
+footer button:hover {
+  background-color: #000;
+}
+
+.button_playlist:hover a,
+.button_newpodcast:hover a,
+footer button:hover a {
+  color: #fff;
+}
+
+.button_newpodcast {
+  width: 140px;
+}
+
+.button_playlist a,
+.button_newpodcast a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+/* MAIN  */
+
+.main_container {
+  background-color: #191818;
+  width: 80vw;
+  min-height: 90vh;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.title_main,
+.title_albuns,
+.title_radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 1rem;
+}
+
+.title_albuns,
+.title_radio {
+  margin-top: 2rem;
+}
+
+.title_main h1,
+.title_albuns h2,
+.title_radio h2 {
+  color: #f4eeee;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.title_main a,
+.title_albuns a,
+.title_radio a {
+  text-decoration: none;
+  color: #888383;
+  transition: 0.3s;
+}
+
+.title_main a:hover,
+.title_albuns a:hover,
+.title_radio a:hover {
+  color: #f4eeee;
+}
+
+.artists_popular,
+.albuns_popular,
+.radio_popular {
+  display: flex;
+  gap: 1rem;
+}
+
+.popular_style,
+.albuns_style,
+.radio_style {
+  max-width: 110px;
+}
+
+.popular_style img,
+.albuns_style img,
+.radio_style img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-image: cover;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.albuns_style img,
+.radio_style img {
+  border-radius: 10%;
+}
+
+.popular_style img:hover,
+.albuns_style img:hover,
+.radio_style img:hover {
+  transform: scale(1.1);
+}
+
+.popular_style h3,
+.albuns_style h3 {
+  color: #d1cece;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.popular_style p,
+.albuns_style p,
+.radio_style p {
+  text-align: center;
+  color: #888383;
+}
+
+/* FOOTER  */
+
+footer {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  background: linear-gradient(to right, #ae2896, #825dc2, #6c78d8, #5199f3);
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+}
+
+.description_footer h3 {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.description_footer p {
+  font-size: 0.8rem;
+  color: #f4eeee;
+}
+
+footer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding: 1.2rem;
+  border-radius: 30px;
+  background-color: #fff;
+  cursor: pointer;
+  border: transparent;
+  transition: 0.3s;
+}
+
+footer button a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  transition: 0.3s;
+}

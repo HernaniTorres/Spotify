@@ -1,0 +1,257 @@
+/* HEADER */
+
+@media (max-width: 780px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .searching_container {
+    gap: 0.6rem;
+    max-width: 400px;
+    position: relative;
+  }
+
+  .searching_glass {
+    justify-content: flex-start;
+  }
+
+  .buttons_header {
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  #spotify {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 0.7rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .searching_container {
+    width: 200px;
+    position: relative;
+  }
+
+  #spotify {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 0.7rem;
+  }
+
+  .ask_listen {
+    width: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  #spotify {
+    display: none;
+  }
+
+  #magnifying-glass {
+    font-size: 0.8rem;
+  }
+
+  .searching_glass {
+    padding: 0.4rem;
+  }
+
+  .ask_listen {
+    width: 180px;
+  }
+
+  #list {
+    font-size: 0.9rem;
+  }
+
+  #house {
+    font-size: 0.8rem;
+  }
+
+  .button_signIn h3 {
+    font-size: 0.7rem;
+  }
+
+  .button_signUp h3 {
+    font-size: 0.7rem;
+  }
+}
+
+/* MAIN  */
+
+@media (max-width: 1024px) {
+  .container_separation {
+    gap: 3.5rem;
+  }
+
+  .aside_container {
+    width: 25vw;
+  }
+
+  .your_library h3 {
+    margin-left: -25px;
+  }
+
+  .main_container {
+    width: 100vw;
+  }
+
+  .popular_style:nth-child(5n + 1) {
+    display: none;
+  }
+
+  .albuns_style:nth-child(5n + 1) {
+    display: none;
+  }
+
+  .radio_style:nth-child(5n + 1) {
+    display: none;
+  }
+}
+
+@media (max-width: 916px) {
+  .main_container {
+    min-height: 100vh;
+  }
+
+  .container_separation {
+    gap: 3.2rem;
+    overflow-x: hidden;
+  }
+
+  .your_library h3 {
+    margin-left: -15px;
+  }
+
+  .popular_style:nth-child(4n + 1) {
+    display: none;
+  }
+
+  .albuns_style:nth-child(4n + 1) {
+    display: none;
+  }
+
+  .radio_style:nth-child(4n + 1) {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #plus_icon {
+    display: none;
+  }
+
+  .popular_style:nth-child(3) {
+    display: none;
+  }
+
+  .albuns_style:nth-child(3) {
+    display: none;
+  }
+
+  .radio_style:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 433px) {
+  .button_signIn h3 {
+    font-size: 0.9rem;
+  }
+
+  .title_main,
+  .title_albuns,
+  .title_radio {
+    width: 100%;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .main_container {
+    width: 100%;
+  }
+
+  .popular_style:nth-child(2n + 1) {
+    display: none;
+  }
+
+  .albuns_style:nth-child(2n + 1) {
+    display: none;
+  }
+
+  .radio_style:nth-child(2n + 1) {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container_separation {
+    margin-bottom: 90px;
+  }
+
+  footer {
+    height: 90px;
+  }
+
+  .description_footer h3 {
+    font-size: 0.8rem;
+  }
+
+  .description_footer p {
+    font-size: 0.7rem;
+  }
+
+  footer button {
+    width: 180px;
+  }
+}
+
+@media (max-width: 395px) {
+  .button_signIn h3 {
+    font-size: 0.9rem;
+  }
+
+  .title_main,
+  .title_albuns,
+  .title_radio {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .artists_popular,
+  .albuns_popular,
+  .radio_popular {
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .albuns_popular {
+    gap: 4rem;
+  }
+
+  .radio_popular {
+    gap: 4rem;
+  }
+
+  .popular_style:nth-child(3n + 1) {
+    display: none;
+  }
+
+  .albuns_style:nth-child(3n + 1) {
+    display: none;
+  }
+
+  .radio_style:nth-child(3n + 1) {
+    display: none;
+  }
+}
